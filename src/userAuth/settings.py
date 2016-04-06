@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
-
+ 
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,7 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# provide our get_profile()
+AUTH_PROFILE_MODULE = 'driver.Driver'
+
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+#    'car',
+#    'tinymce',
+#    'pages',
+    'driver',
 ]
 
 MIDDLEWARE_CLASSES = [
