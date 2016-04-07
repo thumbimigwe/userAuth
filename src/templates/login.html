@@ -6,4 +6,9 @@
   <a href="/logout">Logout</a>
 {% else %}
   <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Linkedin</a>
+<!--
+  <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Facebook</a>
+  <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Twitter</a>
+  <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Google</a>
+-->
 {% endif %}
