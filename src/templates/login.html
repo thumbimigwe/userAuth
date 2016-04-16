@@ -5,6 +5,8 @@
   <br>
   <a href="/logout">Logout</a>
 {% else %}
+
+
   <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Linkedin</a>
 <!--
   <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Facebook</a>
@@ -13,4 +15,6 @@
   <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Github</a>
   <a href="{% url 'social:begin' backend='linkedin-oauth2' %}">Login with Sound Cloud</a>
 -->
+
+
 {% endif %}
